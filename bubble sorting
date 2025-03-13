@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+int a[10];
+int i,j,temp,n;
+printf("enter n value:");
+scanf("%d",&n);
+printf("Enter %d array elements\n",n);
+for(i=0;i<n;i++)
+{
+printf("enter %d element:",i+1);
+scanf("%d",&a[i]);
+}
+printf("Array elements are:\n");
+for(i=0;i<n;i++)
+{
+ printf("%d\t",a[i]);
+}
+printf("\nSorting\n");
+for(i=0;i<n-1;i++)            //pass
+{
+for(j=0;j<n-i-1;j++)         //comparision
+{
+if(a[j]>a[j+1])                //compare element
+{ 
+  temp=a[j];
+  a[j]=a[j+1];
+  a[j+1]=temp; 
+  }
+  }
+  }
+  printf("array after sorting\n");
+  for(i=0;i<n;i++)
+  {
+  printf("%d\t",a[i]);
+  }
+  return 0;
+  }
+  
