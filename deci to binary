@@ -1,0 +1,140 @@
+#include<stdio.h>
+int stack[100],top=-1;
+void push(int rem)#include<stdio.h>
+int stack[100],top=-1;
+void push(int rem)
+{
+                                                            
+stack[++top]=rem;
+}
+
+int pop()
+{
+                                                            
+return stack[top--];
+}
+void decitobinary(int num)
+{
+while(num>0)
+{
+int rem=num%2;
+push(rem);
+num/=2;
+}
+}
+
+
+int main()
+{
+int num,rem;
+printf("enter a number to convert it into binary: ");
+scanf("%d",&num);
+decitobinary(num);
+printf("Binary number is:");
+while(top>=0)
+{
+printf("%d",pop());
+}
+printf("\n");
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//[5]if(top>100){printf("stack is overflow\n");}
+//if(top<0){printf("stack underflow");return -1;}[11]
+
+{
+                                                            
+stack[++top]=rem;
+}
+
+int pop()
+{
+                                                            
+return stack[top--];
+}
+void decitobinary(int num)
+{
+while(num>0)
+{
+int rem=num%2;
+push(rem);
+num/=2;
+}
+}
+
+
+int main()
+{
+int num,rem;
+printf("enter a number to convert it into binary: ");
+scanf("%d",&num);
+decitobinary(num);
+printf("Binary number is:");
+while(top>=0)
+{
+printf("%d",pop());
+}
+printf("\n");
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//[5]if(top>100){printf("stack is overflow\n");}
+//if(top<0){printf("stack underflow");return -1;}[11]
